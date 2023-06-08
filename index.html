@@ -42,7 +42,7 @@
                 <a href="#">Home</a>
                 <a href="#about-us">Sobre nosotros</a>
                 <a href="#anecdotas">Anécdotas</a>
-                <a href="#">Contacto</a>
+                <a href="#contacto">Contacto</a>
                 <img src="assets/icons/icons8-firefighter-50.png" alt="firefighter-icon-profile.png">
             </div>
         </nav>
@@ -70,7 +70,7 @@
         <section id="anecdotas" class="anecdotas">
             <h2 class="anecdotas__title">Anécdotas</h2>
             <div class="anecdotas__cards">
-                <div class="anecdotas__card">
+                <div class="anecdotas__card"> <!-- Anécdota 1 -->
                     <img class="anecdotas__card-img" src="assets/img/bate-de-beisbol.jpg" alt="#####">
                     <div class="anecdotas__card-content">
                         <h4>Encontré el bate de béisbol</h4>
@@ -101,7 +101,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="anecdotas__card">
+                <div class="anecdotas__card"> <!-- Anécdota 2 -->
                     <img class="anecdotas__card-img" src="assets/img/humo-negro.jpg" alt="#####">
                     <div class="anecdotas__card-content">
                         <h4>No queda aire</h4>
@@ -153,21 +153,38 @@
                         </p>
                     </div>
                 </div>
-                <div class="anecdotas__card">
-                    <img class="anecdotas__card-img" src="assets/img/wildfire.jpg" alt="#####">
-                    <div class="anecdotas__card-content">
-                        <h4>Se picó en el cuartel</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatum reprehenderit, dolore repellat deleniti atque, doloremque optio error, ducimus impedit ea perferendis? Dolorum laudantium ullam dolorem aliquid eos in animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, est. Expedita perspiciatis cum facere tempore, fugiat quam molestiae, dolorem nobis eum accusantium commodi? Animi ratione, laborum doloremque quod nobis earum?</p>
-                        <input type="checkbox" id="view-more3" class="view-more hidden-checkbox" checked/>
-                        <label class="showed" for="view-more3">Leer más...</label>
-                        <label class="hidden" for="view-more3">Leer menos</label>
-                        <p class="hidden">Lasgagasorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam sunt dignissimos fuga sed, error officia ratione, quod quia ut aliquid eum minima pariatur? Nulla nemo, dolore dolorum minus delectus eaque
-                        </p>
-                    </div>
-                </div>
             </div>
+            
+        </section>
+
+        <section id="contacto" class="contact-us">
+            <div class="contact-us__form-img">
+                <img src="assets/img/bomberos-extinguiendo.jpg" alt="bomberos-extinguiendo.jpg">
+            </div>
+            <form class="contact-us__form">
+                <div class="contact-us__form-text">
+                    <h2>Contacto</h2>
+                    <p>¿Te gustaría recibir actualizaciones, preguntarnos algo o dar tu opinión? ¡Envíanos un mensaje!</p>               
+                </div>
+                <div class="contact-us__form-inputs">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="text" placeholder="Tu apellido" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Celular" required>
+                </div>
+                <div class="contact-us__form-msg">
+                    <p>Escribí tu mensaje aquí</p>
+                    <textarea placeholder="..." required></textarea>
+                    <input type="submit" value="Enviar">                    
+                </div>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <h4>Fire D'Sire</h4>
+        <p>Fire D'Sire®. Todos los derechos reservados. 2023. Nicolás Ponce.</p>
+    </footer>
 
 </body>
 </html>
