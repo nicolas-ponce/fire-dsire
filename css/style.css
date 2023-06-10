@@ -28,6 +28,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--black);
+    overflow-x: hidden;
 }
 
 
@@ -214,7 +215,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
+    width: 90%;
+    margin: auto;
     height: 8rem;
 }
 
@@ -223,9 +225,9 @@ header {
     gap: 2rem;
     align-items: center;
 }
-.navbar__items img {
+.navbar__items a img {
     margin-left: 2rem;
-    width: 8%;
+    width: 50%;
 }
 
 
@@ -471,4 +473,28 @@ header {
     color: var(--red);
     border: 1px solid var(--red);
     font-weight: 700;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10rem;
+    margin: auto;
+}
+.footer h4 {
+    margin: 0;
+}
+.footer p {
+    font-size: 1.2rem;
+}
+
+.footer__icons {
+    display: flex;
+}
+
+.footer__icons img {
+    width: 50%;
 }
