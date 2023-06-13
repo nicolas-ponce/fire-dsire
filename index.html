@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mqs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@700&family=Source+Serif+Pro:wght@300;600&display=swap" rel="stylesheet">
@@ -30,15 +31,16 @@
                         <span></span>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
+    
+
     <header id="header">
         <nav class="navbar">
             <h2>Fire d'sire</h2>
-            <div class="navbar__items">
+            <div class="navbar__items navbar__items1">
                 <a href="#">Home</a>
                 <a href="#about-us">Sobre nosotros</a>
                 <a href="#anecdotas">Anécdotas</a>
@@ -46,6 +48,19 @@
                 <a href="sign-inUp.html">
                     <img src="assets/icons/icons8-firefighter-50.png" alt="firefighter-icon-profile.png">
                 </a>
+            </div>
+            <label for="hamburguer__checkbox" class="hamburguer__label">
+                <div class="hamburguer__line"></div>
+                <div class="hamburguer__line"></div>
+                <div class="hamburguer__line"></div>
+            </label>
+            <input type="checkbox" id="hamburguer__checkbox">
+            <div class="navbar__items navbar__items2">
+                <a href="sign-inUp.html">Mi Perfil</a>
+                <a href="#">Home</a>
+                <a href="#about-us">Sobre nosotros</a>
+                <a href="#anecdotas">Anécdotas</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </nav>
     </header>
@@ -73,8 +88,8 @@
             <h2 class="anecdotas__title">Anécdotas</h2>
             <div class="anecdotas__cards">
                 <div class="anecdotas__card"> <!-- Anécdota 1 -->
-                    <img class="anecdotas__card-img" src="assets/img/bate-de-beisbol.jpg" alt="#####">
                     <div class="anecdotas__card-content">
+                        <img class="anecdotas__card-img" src="assets/img/bate-de-beisbol.jpg" alt="bate-de-beisbol.jpg">
                         <h4>Encontré el bate de béisbol</h4>
                         <p>Mi nombre es Daniel, llevo 17 años siendo bombero. Recuerdo que cuando inicié en la profesión, era conocido por tener un estómago demasiado fuerte, haciéndome un poco insensible a ciertas situaciones. Un día aprendí a tener sensibilidad, quizás no de la mejor manera...</p>
                         <input type="checkbox" id="view-more1" class="view-more hidden-checkbox" checked/>
@@ -104,8 +119,8 @@
                     </div>
                 </div>
                 <div class="anecdotas__card"> <!-- Anécdota 2 -->
-                    <img class="anecdotas__card-img" src="assets/img/humo-negro.jpg" alt="#####">
                     <div class="anecdotas__card-content">
+                        <img class="anecdotas__card-img" src="assets/img/humo-negro.webp" alt="humo-negro.webp">
                         <h4>No queda aire</h4>
                         <p>Hola, soy Marcos, tengo una historia donde no supe si iba a volver con vida y que a día de hoy me persigue.</p>
                         <input type="checkbox" id="view-more2" class="view-more hidden-checkbox" checked/>
