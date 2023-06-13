@@ -107,6 +107,10 @@ Breakpoints
         text-align: center;
     }
 
+    .contact-us__form-msg input {
+        width: 100%;
+    }
+
     .footer h4 {
         font-size: 2rem;
     }
