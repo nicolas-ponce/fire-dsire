@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-style.css">
+    <link rel="stylesheet" href="css/mqs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@700&family=Source+Serif+Pro:wght@300;600&display=swap" rel="stylesheet">
@@ -13,7 +15,61 @@
 </head>
 <body>
     <main>
-        
+        <img class="fire-dept-bck" src="assets/img/incendio-wallpaper.jpg" alt="fire-dept.jpg">
+        <section>
+            <label for="alternate-input" class="alternate-label">
+                <img src="assets/icons/icons8-firefighter-50.png">
+            </label>
+            <input type="checkbox" id="alternate-input">
+
+            <div class="form-box su-form">
+                <form>
+                    <h2>Registrarse</h2>
+                    <div class="inputbox">
+                        <img src="assets/icons/usuario-icon.png" alt="usuario-icon.png">
+                        <input type="text" required>
+                        <label>Usuario</label>
+                    </div>
+                    <div class="inputbox">
+                        <img src="assets/icons/correo.png">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <img src="assets/icons/contraseña-icon.png">
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <button>
+                        <a href="index.html">Registrarme</a>
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="form-box si-form">
+                <form>
+                    <h2>Iniciar Sesión</h2>
+                    <div class="inputbox">
+                        <img src="assets/icons/usuario-icon.png" alt="usuario-icon.png">
+                        <input type="text" required>
+                        <label>Usuario</label>
+                    </div>
+                    <div class="inputbox">
+                        <img src="assets/icons/contraseña-icon.png">
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="forget">
+                        <label for="remember-me"><input id="remember-me" type="checkbox">Recuérdame</label>
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+                    <button>
+                        <a href="index.html">Iniciar Sesión</a>
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
