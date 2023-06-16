@@ -92,6 +92,99 @@ Breakpoints
     }
 
 
+
+
+    /* Sign-inUp.html */
+    .section-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        width: 92%;
+        margin: auto;
+        gap: 8rem;
+    }
+
+    .form-box {
+        width: 65%;
+        margin-top: 6rem;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .overlay-text {
+        display: flex;
+        position: absolute;
+        margin: auto;
+        background-color: transparent;
+        backdrop-filter: blur(.4rem);
+        width: 45%;
+        height: 20%;
+        z-index: 20;
+    }
+    .overlay-text1 {
+        top: 90%;
+        left: 54%;
+    }
+    .overlay-text2 {
+        top: 126%;
+        left: 0%;
+    }
+
+    .arrow-bck {
+        display: flex;
+    }
+
+
+
+    .arrow {
+        top: 90%;
+        z-index: 20;
+    }
+    .arrow2 {
+        top: 120%;
+        left: 42.5%;
+        transform: rotate(180deg);
+    }
+
+    .double-side-arrow {
+        display: none;
+    }
+
+    
+    .preguntas {
+        top: 3%;
+        left: 8%;
+        flex-direction: row;
+        width: 100%;
+        height: 2%;
+        gap: 10rem;
+        margin-left: 1.4rem;
+        position: sticky;
+    }
+
+    #alternate-input:not(:checked) ~ .su-form,
+    #alternate-input:checked ~ .si-form {
+        animation: none;
+
+    }
+    #alternate-input:not(:checked) ~ .si-form,
+    #alternate-input:checked ~ .su-form {
+        animation: none;
+    }
+
+    #alternate-input:checked ~ .preguntas .pregunta__registrarse,
+    #alternate-input:not(:checked) ~ .preguntas .pregunta__iniciarSesion {
+        animation: none;
+    }
+    #alternate-input:checked ~ .preguntas .pregunta__iniciarSesion,
+    #alternate-input:not(:checked) ~ .preguntas .pregunta__registrarse {
+        animation: none;
+    }
+
 }
 
 
@@ -120,6 +213,15 @@ Breakpoints
     .footer__icons img {
         width: 35%;
     }
+
+
+
+
+    .form-box {
+        width: 75%;
+        margin-top: 6rem;
+    }
+
 
 }
 
@@ -179,5 +281,8 @@ Breakpoints
     }
 
 
-
+    .form-box {
+        width: 100%;
+        margin-top: 6rem;
+    }
 }

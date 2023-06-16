@@ -16,7 +16,7 @@
 <body>
     <main>
         <img class="fire-dept-bck" src="assets/img/incendio-wallpaper.jpg" alt="fire-dept.jpg">
-        <section>
+        <section class="section-form">
             <input type="checkbox" id="alternate-input">
             <label for="alternate-input" class="alternate-label double-side-arrow">
                 <span></span>
@@ -24,19 +24,41 @@
                 <span></span>
             </label>
 
-            <div class="overlay"></div>
-
-            <div class="preguntas">
-                <div class="pregunta__registrarse">
-                    <p>Ya tienes una cuenta?</p>
-                </div>
-                <div class="pregunta__iniciarSesion">
-                    <p>Aún no tienes una cuenta?</p>
-                </div>
+            <div class="arrow-bck">
+                <a href="#si-form" class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="arrow-bck">
+                <a href="#su-form" class="arrow arrow2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
 
 
-            <div class="form-box su-form">
+            <div class="overlay"></div>
+
+
+            <p class="backHome-link">
+                <a href="index.html" class="underline">
+                    <img src="assets/icons/arrow-icon.png" alt="arrow-icon.png">
+                    Volver a la página principal
+                </a>
+            </p>
+
+            <div class="overlay-text overlay-text1"></div>
+            <div class="overlay-text overlay-text2"></div>
+            <div class="preguntas">
+                <p class="pregunta__registrarse">Ya tienes una cuenta?</p>
+                <p class="pregunta__iniciarSesion">Aún no tienes una cuenta?</p>
+            </div>
+
+
+            <div id="su-form" class="form-box su-form">
                 <form>
                     <h2>Registrarse</h2>
                     <div class="inputbox">
@@ -61,7 +83,7 @@
             </div>
 
 
-            <div class="form-box si-form">
+            <div id="si-form" class="form-box si-form">
                 <form>
                     <h2>Iniciar Sesión</h2>
                     <div class="inputbox">

@@ -16,20 +16,22 @@ body {
 }
 
 
-section {
+.section-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    width: 90%;
+    width: 92%;
     margin: auto;
 }
 
 
 .form-box {
     position: relative;
-    width: 40rem;
-    height: 45rem;
+    width: 33%;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 4rem 0;
     background: transparent;
     border: 2px solid rgba(241, 241, 241, .7);
     border-radius: 2rem;
@@ -37,20 +39,21 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 h2 {
     text-align: center;
-    margin: 0;
+    margin: 0 1.2rem;
 }
 
+form {
+    width: 90%;
+}
 
 .inputbox {
     position: relative;
-    margin: 3.2rem 0;
-    width: 31rem;
+    margin: 3.2rem auto;
+    width: 80%;
 }
 
 .inputbox label {
@@ -77,7 +80,7 @@ h2 {
     background: transparent;
     border: none;
     outline: none;
-    padding: 0 3.2rem 0 .4rem;
+    padding: 0 2.4rem 0 .4rem;
     color: var(--white);
     font-size: 1.6rem;
     border-bottom: 2px solid var(--white);
@@ -96,9 +99,12 @@ h2 {
 
 
 .forget {
-    margin: -1.5rem 0 1.5rem;
+    margin: -1.5rem auto 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .forget label input {
@@ -110,11 +116,14 @@ h2 {
 }
 
 button {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
     height: 4rem;
     background-color: transparent;
     border: 1px solid var(--white);
     padding: 1rem 2rem;
+    margin: auto;
     outline: none;
     border-radius: 0.4rem;
     cursor: pointer;
@@ -140,6 +149,10 @@ button:hover a {
     order: -2;
 }
 
+.si-form {
+    margin-bottom: 8rem; /* !! */
+}
+
 
 #alternate-input {
     display: none;
@@ -153,13 +166,8 @@ button:hover a {
 #alternate-input:not(:checked) ~ .si-form,
 #alternate-input:checked ~ .su-form {
     animation: appear .4s linear forwards;
-
 }
 
-.alternate-label {
-    cursor: pointer;
-    order: -1;
-}
 
 
 
@@ -182,8 +190,17 @@ button:hover a {
     }
 }
 
+
+
+.arrow-bck {
+    display: none;
+}
+
+
+
 .double-side-arrow {
-    position: relative;
+    cursor: pointer;
+    order: -1;
     background: transparent;
     border: 2px solid var(--white);
     border-radius: 50%;
@@ -340,7 +357,11 @@ button:hover a {
     align-items: center;
     gap: 8rem;
     width: 20%;
+    height: 40%;
+    text-align: left;
 }
+
+
 
 #alternate-input:checked ~ .preguntas .pregunta__registrarse,
 #alternate-input:not(:checked) ~ .preguntas .pregunta__iniciarSesion {
@@ -361,7 +382,56 @@ button:hover a {
     background-color: transparent;
     z-index: 20;
 }
+.overlay-text {
+    display: none;
+}
+
 
 #alternate-input:checked ~ .overlay {
     left: 60%;
+}
+
+
+
+.backHome-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: 10%;
+}
+
+.underline{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  top: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
 }
