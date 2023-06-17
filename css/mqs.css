@@ -140,14 +140,16 @@ Breakpoints
 
 
 
-    .arrow {
+    #arrow1 {
+        position: absolute;
         top: 90%;
         z-index: 20;
     }
-    .arrow2 {
-        top: 120%;
+    #arrow2 {
+        top: 125%;
         left: 42.5%;
         transform: rotate(180deg);
+        z-index: 20;
     }
 
     .double-side-arrow {
