@@ -147,7 +147,7 @@ Breakpoints
         z-index: 20;
     }
     #arrow2 {
-        top: 125%;
+        top: -30%;
         left: 42.5%;
         transform: rotate(180deg);
         z-index: 20;
