@@ -139,7 +139,9 @@ Breakpoints
         display: flex;
     }
 
-
+    .si-form {
+        margin: 10rem auto 5rem; /* !! */
+    }
 
     #arrow1 {
         position: absolute;
@@ -147,10 +149,10 @@ Breakpoints
         z-index: 20;
     }
     #arrow2 {
-        top: -30%;
+        top: -25%;
         left: 42.5%;
         transform: rotate(180deg);
-        z-index: 20;
+        z-index: 21;
     }
 
     .double-side-arrow {
