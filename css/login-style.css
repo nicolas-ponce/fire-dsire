@@ -149,7 +149,9 @@ button:hover a {
     order: -2;
 }
 
-
+.a-question {
+    display: none;
+}
 
 
 #alternate-input {
@@ -190,9 +192,6 @@ button:hover a {
 
 
 
-.arrow-bck {
-    display: none;
-}
 
 
 

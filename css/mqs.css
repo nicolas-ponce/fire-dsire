@@ -7,6 +7,8 @@ Breakpoints
 
 
 
+
+
 /* Tablet */
 @media (max-width: 980px) {
     .hero {
@@ -115,62 +117,36 @@ Breakpoints
         display: none;
     }
 
-    .overlay-text {
-        display: flex;
-        position: absolute;
-        margin: auto;
-        background-color: transparent;
-        backdrop-filter: blur(.4rem);
-        width: 45%;
-        height: 2rem;
-        top: 24%;
-        z-index: 20;
-    }
-    .overlay-text1 {
-        background-color: blue;
-        left: 54%;
-    }
-    .overlay-text2 {
-        background-color: blue;
-        left: 0%;
+
+    .preguntas {
+        display: none;
     }
 
-    .arrow-bck {
-        display: flex;
+
+    .section-form {
+        height: 200vh;
     }
 
     .si-form {
-        margin: 10rem auto 5rem; /* !! */
+        margin: 25rem auto;
     }
 
-    #arrow1 {
+    .a-question {
+        display: flex;
+    }
+    .a-su-form {
         position: absolute;
-        top: 90%;
-        z-index: 20;
+        top: -5rem;
     }
-    #arrow2 {
-        top: -25%;
-        left: 42.5%;
-        transform: rotate(180deg);
-        z-index: 21;
-    }
+
 
     .double-side-arrow {
         display: none;
     }
 
-    
-    .preguntas {
-        position: relative;
-        top: 3%;
-        left: 8%;
-        flex-direction: row;
-        width: 100%;
-        height: 2%;
-        gap: 10rem;
-        margin-left: 1.4rem;
-        position: sticky;
-    }
+
+
+
 
     #alternate-input:not(:checked) ~ .su-form,
     #alternate-input:checked ~ .si-form {
