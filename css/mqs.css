@@ -122,15 +122,16 @@ Breakpoints
         background-color: transparent;
         backdrop-filter: blur(.4rem);
         width: 45%;
-        height: 20%;
+        height: 2rem;
+        top: 24%;
         z-index: 20;
     }
     .overlay-text1 {
-        top: 90%;
+        background-color: blue;
         left: 54%;
     }
     .overlay-text2 {
-        top: 126%;
+        background-color: blue;
         left: 0%;
     }
 
@@ -158,6 +159,7 @@ Breakpoints
 
     
     .preguntas {
+        position: relative;
         top: 3%;
         left: 8%;
         flex-direction: row;
@@ -226,6 +228,16 @@ Breakpoints
 
 
 }
+
+
+/* Tiny Tweak */
+@media (max-width: 493px) {
+    .overlay-text {
+        height: 4rem;
+    }
+}
+
+
 
 /* Mobile */
 @media (max-width: 480px) {
