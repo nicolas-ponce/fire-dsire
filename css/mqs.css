@@ -133,8 +133,14 @@ Breakpoints
 
     .a-question {
         display: flex;
+        justify-content: center;
         text-align: center;
+        background-color: rgba(24, 24, 24, 0.3);
         backdrop-filter: blur(2rem);
+        width: 95%;
+        padding: .8rem 1.6rem;
+        border: 1px solid rgba(241, 241, 241, .7);
+        border-radius: .4rem;
         animation: question 6s linear infinite;
         transition: all .2s;
     }
